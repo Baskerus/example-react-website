@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.services-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 10rem;
+  padding-bottom: 9rem;
+  width: 100%;
+  max-width: 100vw;
+  background-color: $primary-color;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0px;
+}
+.chevron-down {
+  position: absolute;
+  top: 1rem;
+  left: calc(50% - 16px);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1023px) {
+  .services-container {
+    .cards-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}

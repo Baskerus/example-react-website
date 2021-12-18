@@ -1,0 +1,14 @@
+$primary-color: rgb(15, 15, 15);
+
+.p-5 {
+  padding-left: 5px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}

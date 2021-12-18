@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $primary-color;
+  height: 25rem;
+
+  color: white;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    height: 54rem;
+
+    padding-top: -rem;
+    .footer-links-wrapper {
+      margin: 2rem;
+    }
+  }
+}
+
+.footer-links-wrapper {
+  margin: 3rem 3rem 5rem 3rem;
+
+  li {
+    margin-top: 0.3rem;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-links-title {
+  font-size: 105%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
+
+  width: fit-content;
+
+  border-bottom: 1px solid white;
+}
+
+.media-links {
+  position: absolute;
+
+  bottom: 2rem;
+  :nth-child(2) {
+    margin: 0 1rem;
+  }
+}

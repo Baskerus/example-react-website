@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+button {
+  font-size: 1rem;
+  padding: 0.8rem 2.5rem;
+
+  border-radius: 0.5rem;
+  color: white;
+  background-color: $primary-color;
+
+  border: 1px solid white;
+
+  cursor: pointer;
+
+  &:hover {
+    filter: invert(1) grayscale(1);
+  }
+}

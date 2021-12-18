@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 520px;
+  padding: 3rem 2rem;
+
+  color: white;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 1.3rem;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  img {
+    width: 150px;
+    margin-bottom: 1.5rem;
+    filter: grayscale(1);
+
+    &.ml-10 {
+      margin-left: -10px;
+    }
+  }
+  p {
+    margin: 1.5rem 0rem;
+  }
+
+  transition: all 0.13s ease-in-out;
+
+  &.active {
+    color: $primary-color;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+
+    & > button {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      background-color: white;
+      font-weight: bold;
+    }
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* margin: 0rem 1.5rem; */
+  }
+  @media only screen and (max-width: 1023px) {
+    margin: 2rem 0;
+    &.active {
+      transform: scale(1);
+      color: $primary-color;
+      background-color: white;
+    }
+  }
+}
