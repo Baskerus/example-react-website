@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="contact">
       <FooterLinks
         title={"About"}
         linkList={[

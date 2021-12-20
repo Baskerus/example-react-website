@@ -5,7 +5,7 @@ import HeroImage from "./images/undraw_website_setup_re_d4y9.svg";
 
 function Hero() {
   return (
-    <div className="hero-container">
+    <div id="hero" className="hero-container">
       <div className="hero-text-container">
         <h1>
           Welcome to

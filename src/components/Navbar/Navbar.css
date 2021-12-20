@@ -36,10 +36,7 @@
           align-items: center;
   width: 100%;
   padding: 1rem 8%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.603)), to(white));
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.603), white);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  background-color: white;
 }
 
 .navbar-logo {
@@ -187,12 +184,64 @@ img {
   text-align: center;
 }
 
+.drop {
+  position: relative;
+}
+
+.drop .dropdown {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 3rem;
+  left: -1.1rem;
+  width: 18rem;
+  height: 10rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.drop .dropdown .dropdown-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.drop .dropdown .dropdown-list .dropdown-link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+.drop .dropdown .dropdown-list .dropdown-link:hover {
+  background-color: rgba(241, 241, 241, 0.747);
+}
+
 .active-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 110%;
   font-weight: 700;
+}
+
+.service-title {
+  font-size: 100%;
+  font-weight: 500;
 }
 
 .inactive {

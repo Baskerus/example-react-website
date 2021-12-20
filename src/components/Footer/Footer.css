@@ -81,6 +81,7 @@ ul {
 
 .media-links {
   position: absolute;
+  cursor: pointer;
   bottom: 2rem;
 }
 

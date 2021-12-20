@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+
 import "./ServiceCard.css";
 import Button from "../Button/Button";
 import serviceImageOne from "./images/undraw_co-working_re_w93t.svg";
 import serviceImageTwo from "./images/undraw_conversation_re_c26v.svg";
 import serviceImageThree from "./images/undraw_programmer_re_owql.svg";
 
-function ServiceCard({ title, image, description }) {
+function ServiceCard({ title, image, description, id }) {
   function handleCardClick(e) {
     let arr = document.querySelectorAll(".active");
     arr.forEach((element) => {
@@ -16,6 +17,7 @@ function ServiceCard({ title, image, description }) {
 
   return (
     <div
+      id={id}
       onClick={handleCardClick}
       className={title == "Service Two" ? "card active" : "card"}
     >
