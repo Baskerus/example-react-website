@@ -42,7 +42,7 @@
   width: 100%;
   overflow: hidden;
   letter-spacing: 1px;
-  color: #0f0f0f;
+  color: #111111;
   -webkit-animation: pageFade 0.6s ease-in-out;
           animation: pageFade 0.6s ease-in-out;
 }
@@ -121,12 +121,12 @@
 .hero-text-container button {
   margin-top: 2rem;
   padding: 1rem 2rem;
-  border: 1px solid #0f0f0f;
+  border: 1px solid #111111;
   background-color: white;
-  color: #0f0f0f;
+  color: #111111;
   font-size: 1.2rem;
   border-radius: 0.5rem;
-  border: 1px solid #0f0f0f;
+  border: 1px solid #111111;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
@@ -134,7 +134,7 @@
 
 .hero-text-container button:hover {
   background-color: white;
-  color: #0f0f0f;
+  color: #111111;
 }
 
 .hero-img {

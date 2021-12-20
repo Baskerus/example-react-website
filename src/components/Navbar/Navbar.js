@@ -42,16 +42,16 @@ function Navbar() {
 
   return (
     <div className="navbar-container">
-      <div className="navbar-logo">
+      <Link to="hero" smooth={true} className="navbar-logo">
         <img src={logo} alt="error"></img>
         EXAMPLE
-      </div>
+      </Link>
       <ul className="nav-links">
         <Link
           to="hero"
           smooth={true}
           spy={true}
-          className="nav-link active-link"
+          className="nav-link"
           onClick={handleLinkClick}
         >
           Home
