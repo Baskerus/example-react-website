@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a911866.chunk.css",
-    "main.js": "/static/js/main.5e4694d9.chunk.js",
-    "main.js.map": "/static/js/main.5e4694d9.chunk.js.map",
+    "main.css": "/static/css/main.96f42b57.chunk.css",
+    "main.js": "/static/js/main.aac49712.chunk.js",
+    "main.js.map": "/static/js/main.aac49712.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7a1bfce0.js",
     "runtime-main.js.map": "/static/js/runtime-main.7a1bfce0.js.map",
     "static/css/2.f78674c2.chunk.css": "/static/css/2.f78674c2.chunk.css",
@@ -10,15 +10,9 @@
     "static/js/2.799c278e.chunk.js.map": "/static/js/2.799c278e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.f78674c2.chunk.css.map": "/static/css/2.f78674c2.chunk.css.map",
-    "static/css/main.8a911866.chunk.css.map": "/static/css/main.8a911866.chunk.css.map",
+    "static/css/main.96f42b57.chunk.css.map": "/static/css/main.96f42b57.chunk.css.map",
     "static/js/2.799c278e.chunk.js.LICENSE.txt": "/static/js/2.799c278e.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/undraw_Campfire_re_9chj.90112d1e.png": "/static/media/undraw_Campfire_re_9chj.90112d1e.png",
-    "static/media/undraw_Collaborators_re_hont.0ed32b9d.png": "/static/media/undraw_Collaborators_re_hont.0ed32b9d.png",
-    "static/media/undraw_Interview_re_e5jn.f6d840ac.png": "/static/media/undraw_Interview_re_e5jn.f6d840ac.png",
-    "static/media/undraw_Late_at_night_re_d3mx.f7af97a0.png": "/static/media/undraw_Late_at_night_re_d3mx.f7af97a0.png",
-    "static/media/undraw_Launching_re_tomg.ee4fc2b6.png": "/static/media/undraw_Launching_re_tomg.ee4fc2b6.png",
-    "static/media/undraw_Organizing_projects_re_9p1k.fd53595d.png": "/static/media/undraw_Organizing_projects_re_9p1k.fd53595d.png",
     "static/media/undraw_co-working_re_w93t.0e205810.svg": "/static/media/undraw_co-working_re_w93t.0e205810.svg",
     "static/media/undraw_conversation_re_c26v.3005b40e.svg": "/static/media/undraw_conversation_re_c26v.3005b40e.svg",
     "static/media/undraw_programmer_re_owql.8579d0e3.svg": "/static/media/undraw_programmer_re_owql.8579d0e3.svg",
@@ -28,7 +22,7 @@
     "static/js/runtime-main.7a1bfce0.js",
     "static/css/2.f78674c2.chunk.css",
     "static/js/2.799c278e.chunk.js",
-    "static/css/main.8a911866.chunk.css",
-    "static/js/main.5e4694d9.chunk.js"
+    "static/css/main.96f42b57.chunk.css",
+    "static/js/main.aac49712.chunk.js"
   ]
 }
