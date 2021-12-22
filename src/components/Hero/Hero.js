@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
 import HeroImage from "./images/undraw_website_setup_re_d4y9.svg";
+import HeroBg from "./images/undraw_website_setup_re_d4y9.svg";
 
 function Hero() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div id="hero" className="hero-container">
+      <div
+        className="hero-bg"
+        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+      ></div>
       <div className="hero-text-container">
         <h1>
           Welcome to
@@ -23,7 +36,11 @@ function Hero() {
           </Link>
         </Button>
       </div>
-      <img className="hero-img" src={HeroImage}></img>
+      <img
+        style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+        className="hero-img"
+        src={HeroImage}
+      ></img>
     </div>
   );
 }

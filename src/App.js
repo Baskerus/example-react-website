@@ -8,13 +8,13 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (
-    <div className="container">
+    <main className="container">
       <Navbar />
       <Hero />
-      <Services />
       {/* <Gallery /> */}
+      <Services />
       <Footer />
-    </div>
+    </main>
   );
 }
 

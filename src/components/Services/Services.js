@@ -2,11 +2,15 @@ import React from "react";
 import "./Services.css";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import { FaChevronDown } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Services() {
   return (
     <div className="services-container" id="services">
-      <FaChevronDown className="chevron-down" color="white" size="35" />
+      <Link to="services" smooth={true}>
+        <FaChevronDown className="chevron-down" color="white" size="35" />
+      </Link>
+
       <div className="cards-container">
         <ServiceCard
           title="Service One"

@@ -47,14 +47,11 @@ function Navbar() {
         EXAMPLE
       </Link>
       <ul className="nav-links">
-        <Link
-          to="hero"
-          smooth={true}
-          spy={true}
-          className="nav-link"
-          onClick={handleLinkClick}
-        >
-          Home
+        <Link to="hero" smooth={true} spy={true}>
+          <li className="nav-link active-link" onClick={handleLinkClick}>
+            {" "}
+            Home
+          </li>
         </Link>
 
         <li className="nav-link drop" onClick={handleDropLink}>
