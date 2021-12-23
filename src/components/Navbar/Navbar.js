@@ -77,10 +77,11 @@ function Navbar() {
             ""
           )}
         </li>
-
-        <li className="nav-link" onClick={handleLinkClick}>
-          Gallery
-        </li>
+        <Link to="gallery-section-container" smooth={true}>
+          <li className="nav-link" onClick={handleLinkClick}>
+            Gallery
+          </li>
+        </Link>
         <Link to="contact" smooth={true} spy={true}>
           {" "}
           <li className="nav-link" onClick={handleLinkClick}>

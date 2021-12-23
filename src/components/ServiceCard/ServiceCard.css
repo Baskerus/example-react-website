@@ -92,7 +92,7 @@
 
 @media only screen and (max-width: 1023px) {
   .card {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   .card.active {
     -webkit-transform: scale(1);

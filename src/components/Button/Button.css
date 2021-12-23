@@ -30,10 +30,27 @@ button {
   background-color: #111111;
   border: 1px solid white;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 button:hover {
   -webkit-filter: invert(1) grayscale(1);
           filter: invert(1) grayscale(1);
+  background-color: black;
+}
+
+.button-inverted {
+  color: #111111;
+  border-color: #111111;
+  background-color: transparent;
+}
+
+.button-inverted:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  border-color: white;
+  color: white;
+  background: rgba(119, 119, 119, 0.6);
 }
 /*# sourceMappingURL=Button.css.map */

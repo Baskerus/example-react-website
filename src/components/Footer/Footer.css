@@ -45,7 +45,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     height: 54rem;
-    padding-top: -rem;
   }
   .footer-container .footer-links-wrapper {
     margin: 2rem;
@@ -53,7 +52,7 @@
 }
 
 .footer-links-wrapper {
-  margin: 3rem 3rem 5rem 3rem;
+  margin: 3rem 3rem 6rem 3rem;
 }
 
 .footer-links-wrapper li {

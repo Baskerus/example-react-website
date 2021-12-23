@@ -37,6 +37,10 @@
   width: 100%;
   padding: 1rem 8%;
   background-color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navbar-logo {
@@ -130,6 +134,10 @@ img {
 
 .burger-menu {
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media only screen and (min-width: 1023px) {
@@ -140,6 +148,10 @@ img {
 
 .nav-menu {
   z-index: 98;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

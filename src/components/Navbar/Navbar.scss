@@ -12,6 +12,8 @@
   padding: 1rem 8%;
 
   background-color: white;
+
+  user-select: none;
 }
 
 .navbar-logo {
@@ -85,6 +87,7 @@ img {
 
 .burger-menu {
   cursor: pointer;
+  user-select: none;
   @media only screen and (min-width: 1023px) {
     display: none;
   }
@@ -92,6 +95,7 @@ img {
 
 .nav-menu {
   z-index: 98;
+  user-select: none;
 
   display: flex;
   justify-content: center;
