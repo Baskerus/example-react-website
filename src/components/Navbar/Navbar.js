@@ -22,15 +22,15 @@ function Navbar() {
 
   function handleDropLink(e) {
     setShowDropdown(!showDropdown);
-    if (e.target.innerHTML == "Service One") {
+    if (e.target.innerHTML === "Service One") {
       document.querySelector("#service-one").classList.add("active");
       document.querySelector("#service-two").classList.remove("active");
       document.querySelector("#service-three").classList.remove("active");
-    } else if (e.target.innerHTML == "Service Two") {
+    } else if (e.target.innerHTML === "Service Two") {
       document.querySelector("#service-two").classList.add("active");
       document.querySelector("#service-one").classList.remove("active");
       document.querySelector("#service-three").classList.remove("active");
-    } else if (e.target.innerHTML == "Service Three") {
+    } else if (e.target.innerHTML === "Service Three") {
       document.querySelector("#service-three").classList.add("active");
       document.querySelector("#service-two").classList.remove("active");
       document.querySelector("#service-one").classList.remove("active");

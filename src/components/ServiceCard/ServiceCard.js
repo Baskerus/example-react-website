@@ -1,5 +1,3 @@
-import Reactclear from "react";
-
 import "./ServiceCard.css";
 import Button from "../Button/Button";
 import serviceImageOne from "./images/undraw_co-working_re_w93t.svg";
@@ -19,14 +17,24 @@ function ServiceCard({ title, image, description, id }) {
     <div
       id={id}
       onClick={handleCardClick}
-      className={title == "Service Two" ? "card active" : "card"}
+      className={title === "Service Two" ? "card active" : "card"}
     >
-      {image == "image-one" ? (
-        <img src={serviceImageOne} className="ml-10"></img>
-      ) : image == "image-two" ? (
-        <img src={serviceImageTwo}></img>
+      {image === "image-one" ? (
+        <img
+          src={serviceImageOne}
+          className="ml-10"
+          alt="Placeholder illustration for service card"
+        ></img>
+      ) : image === "image-two" ? (
+        <img
+          src={serviceImageTwo}
+          alt="Placeholder illustration for service card"
+        ></img>
       ) : (
-        <img src={serviceImageThree}></img>
+        <img
+          src={serviceImageThree}
+          alt="Placeholder illustration for service card"
+        ></img>
       )}
       <h2>{title}</h2>
       <p className="service-description">{description}</p>

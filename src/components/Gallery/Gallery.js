@@ -49,7 +49,7 @@ function Gallery({ slides }) {
                     </div>
                   </div>
                   <div className="slider">
-                    <img
+                    <img alt="Placeholder for carousel"
                       style={{
                         transform: `translateY(${offsetY * 0.3 - 500}px)`,
                       }}

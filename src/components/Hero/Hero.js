@@ -3,7 +3,6 @@ import "./Hero.css";
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
 import HeroImage from "./images/undraw_website_setup_re_d4y9.svg";
-import HeroBg from "./images/undraw_website_setup_re_d4y9.svg";
 
 function Hero() {
   const [offsetY, setOffsetY] = useState(0);
@@ -17,6 +16,7 @@ function Hero() {
   return (
     <div id="hero" className="hero-container">
       <div
+        alt=""
         className="hero-bg"
         style={{ transform: `translateY(${offsetY * 0.6}px)` }}
       ></div>
@@ -37,6 +37,7 @@ function Hero() {
         </Button>
       </div>
       <img
+        alt="Placeholder illustration next to the text"
         style={{ transform: `translateY(${offsetY * 0.4}px)` }}
         className="hero-img"
         src={HeroImage}
