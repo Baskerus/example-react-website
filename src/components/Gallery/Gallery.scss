@@ -54,6 +54,7 @@
     margin-left: 1.5rem;
     padding: 1rem;
     width: 10rem;
+    z-index: 99;
   }
 
   @media only screen and (min-width: 1280px) {
@@ -74,7 +75,8 @@
 
   .right-arrow {
     position: absolute;
-    top: 50%;
+    top: 25%;
+    height: 50%;
     right: 2rem;
     font-size: 3rem;
     color: $primary-color;
@@ -88,13 +90,14 @@
   }
   .left-arrow {
     position: absolute;
-    top: 50%;
+    top: 25%;
+    height: 50%;
     left: 2rem;
     font-size: 3rem;
     color: $primary-color;
     cursor: pointer;
     user-select: none;
-    z-index: 10;
+    z-index: 1;
     transition: opacity 0.1s;
     &:active {
       opacity: 0.3;
@@ -158,9 +161,9 @@
       padding: 0rem 1.3rem;
     }
     button {
-      padding: 1.2rem 2.3rem;
+      padding: 1rem 2rem;
       width: 9rem;
-      margin: 0;
+      margin: 0.5rem;
       margin-top: 1.6rem;
     }
 
