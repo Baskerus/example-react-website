@@ -72,7 +72,7 @@
   padding-left: 1.5rem;
   max-width: 37ch;
   line-height: 1.7rem;
-  border-left: 1px solid #c9c9c9;
+  border-left: 1px solid rgba(0, 0, 0, 0.315);
 }
 
 .gallery-section-container .slider {
@@ -92,28 +92,30 @@
 
 .gallery-section-container button {
   margin-left: 1.5rem;
+  padding: 1rem;
+  width: 10rem;
 }
 
-.gallery-section-container .active .slider-image {
-  -webkit-animation: animateSlide 1s;
-          animation: animateSlide 1s;
-}
-
-@-webkit-keyframes animateSlide {
-  from {
-    opacity: 0;
+@media only screen and (min-width: 1280px) {
+  .gallery-section-container .active .slider-image {
+    -webkit-animation: animateSlide 1s;
+            animation: animateSlide 1s;
   }
-  to {
-    opacity: 1;
+  @-webkit-keyframes animateSlide {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-}
-
-@keyframes animateSlide {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  @keyframes animateSlide {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -173,6 +175,70 @@
 @media only screen and (max-width: 1400px) {
   .gallery-section-container {
     height: 80rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery-section-container {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .gallery-section-container {
+    height: 50rem;
+    text-align: center;
+  }
+  .gallery-section-container .slide-text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    left: calc(50% - 30vw);
+    width: 60vw;
+    z-index: 0;
+  }
+  .gallery-section-container .slide-text-wrapper h2 {
+    width: 130%;
+  }
+  .gallery-section-container .slide-text-wrapper p {
+    border: none;
+    padding: 0;
+  }
+  .gallery-section-container .slider-image {
+    position: absolute;
+    top: -45%;
+    left: -60%;
+    width: 250%;
+    height: auto;
+    margin: auto;
+    opacity: 0.1;
+    z-index: -2;
+  }
+  .gallery-section-container .slider-image > .active {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .gallery-section-container .row {
+    padding: 0rem 1.3rem;
+  }
+  .gallery-section-container button {
+    padding: 1.2rem 2.3rem;
+    width: 9rem;
+    margin: 0;
+    margin-top: 1.6rem;
+  }
+  .gallery-section-container .right-arrow {
+    right: 0.3rem;
+  }
+  .gallery-section-container .left-arrow {
+    left: 0.3rem;
   }
 }
 /*# sourceMappingURL=Gallery.css.map */

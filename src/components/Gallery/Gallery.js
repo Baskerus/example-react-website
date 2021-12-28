@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SliderData } from "./SliderData";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
 import "./Gallery.css";
 
@@ -28,8 +28,8 @@ function Gallery({ slides }) {
   return (
     <div className="gallery-section-container">
       <div className="slider-wrapper">
-        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        <BsChevronLeft className="left-arrow" onClick={prevSlide} />
+        <BsChevronRight className="right-arrow" onClick={nextSlide} />
         {SliderData.map((slide, index) => {
           return (
             <div
@@ -55,7 +55,6 @@ function Gallery({ slides }) {
                       }}
                       src={slide.image}
                       className="slider-image"
-                      alt="travel image"
                     />
                   </div>
                 </div>

@@ -45,6 +45,9 @@ function Footer() {
         <AiFillFacebook size="35" />
         <AiOutlineInstagram size="35" />
         <AiFillGoogleCircle size="35" />
+        <p>
+          Created by <a className="github-link" href="https://github.com/Baskerus">Baskerus</a>
+        </p>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 export const SliderData = [
   {
-    image: "./images/undraw_Campfire_re_9chj.png",
+    image: "./images/undraw_Launching_re_tomg.png",
     title: "Slide Title One",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut libero urna. Integer rutrum magna imperdiet enim sodales aliquam eu non nisl. Praesent ac massa tortor. Integer a felis nibh. Nullam fermentum purus massa. ",
   },
@@ -15,7 +15,7 @@ export const SliderData = [
     desc: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut libero urna. Integer rutrum magna imperdiet enim sodales aliquam eu non nisl. Praesent ac massa tortor.",
   },
   {
-    image: "./images/undraw_Launching_re_tomg.png",
+    image: "./images/undraw_Campfire_re_9chj.png",
     title: "Slide Title Four",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris eget tellus congue varius. Integer a felis nibh. Nullam fermentum purus massa, et tincidunt mauris pellentesque dapibus fermentum purus massa. ",
   },

@@ -34,20 +34,24 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #111111;
-  height: 25rem;
+  height: 29rem;
   color: white;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .footer-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 54rem;
+    height: 58rem;
+    text-align: center;
   }
   .footer-container .footer-links-wrapper {
     margin: 2rem;
+  }
+  .footer-container .footer-links-title {
+    width: 100%;
   }
 }
 
@@ -84,7 +88,15 @@ ul {
   bottom: 2rem;
 }
 
+.media-links p {
+  padding-top: 1rem;
+}
+
 .media-links :nth-child(2) {
-  margin: 0 1rem;
+  margin: 0 1.9rem;
+}
+
+.github-link {
+  color: lightblue;
 }
 /*# sourceMappingURL=Footer.css.map */

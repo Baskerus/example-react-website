@@ -33,7 +33,7 @@
       padding-left: 1.5rem;
       max-width: 37ch;
       line-height: 1.7rem;
-      border-left: 1px solid rgb(201, 201, 201);
+      border-left: 1px solid rgba(0, 0, 0, 0.315);
     }
   }
 
@@ -52,17 +52,21 @@
 
   button {
     margin-left: 1.5rem;
+    padding: 1rem;
+    width: 10rem;
   }
 
-  .active {
-    .slider-image {
-      animation: animateSlide 1s;
-      @keyframes animateSlide {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
+  @media only screen and (min-width: 1280px) {
+    .active {
+      .slider-image {
+        animation: animateSlide 1s;
+        @keyframes animateSlide {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
         }
       }
     }
@@ -106,5 +110,65 @@
 
   @media only screen and (max-width: 1400px) {
     height: 80rem;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 90%;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    height: 50rem;
+    text-align: center;
+
+    .slide-text-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      left: calc(50% - 30vw);
+
+      width: 60vw;
+      z-index: 0;
+
+      h2 {
+        width: 130%;
+      }
+
+      p {
+        border: none;
+        padding: 0;
+      }
+    }
+    .slider-image {
+      position: absolute;
+      top: -45%;
+      left: -60%;
+      width: 250%;
+      height: auto;
+      margin: auto;
+
+      opacity: 0.1;
+      z-index: -2;
+      > .active {
+        animation: none;
+      }
+    }
+
+    .row {
+      padding: 0rem 1.3rem;
+    }
+    button {
+      padding: 1.2rem 2.3rem;
+      width: 9rem;
+      margin: 0;
+      margin-top: 1.6rem;
+    }
+
+    .right-arrow {
+      right: 0.3rem;
+    }
+    .left-arrow {
+      left: 0.3rem;
+    }
   }
 }

@@ -18,7 +18,7 @@ function Hero() {
     <div id="hero" className="hero-container">
       <div
         className="hero-bg"
-        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+        style={{ transform: `translateY(${offsetY * 0.6}px)` }}
       ></div>
       <div className="hero-text-container">
         <h1>
@@ -31,13 +31,13 @@ function Hero() {
           print, and publishing industries for previewing layouts.
         </p>
         <Button>
-          <Link to="services" smooth={true}>
+          <Link to="gallery-section-container" smooth={true} spy={true}>
             Learn More
           </Link>
         </Button>
       </div>
       <img
-        style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+        style={{ transform: `translateY(${offsetY * 0.4}px)` }}
         className="hero-img"
         src={HeroImage}
       ></img>

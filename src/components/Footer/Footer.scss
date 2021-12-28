@@ -7,16 +7,20 @@
   align-items: center;
 
   background-color: $primary-color;
-  height: 25rem;
+  height: 29rem;
 
   color: white;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
-    height: 54rem;
+    height: 58rem;
+    text-align: center;
 
     .footer-links-wrapper {
       margin: 2rem;
+    }
+    .footer-links-title {
+      width: 100%;
     }
   }
 }
@@ -52,7 +56,15 @@ ul {
   cursor: pointer;
 
   bottom: 2rem;
-  :nth-child(2) {
-    margin: 0 1rem;
+
+  p {
+    padding-top: 1rem;
   }
+  :nth-child(2) {
+    margin: 0 1.9rem;
+  }
+}
+
+.github-link {
+  color: lightblue;
 }

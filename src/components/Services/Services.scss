@@ -20,7 +20,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 2rem;
-  
 }
 .chevron-down {
   position: absolute;
@@ -28,6 +27,8 @@
   left: calc(50% - 16px);
   cursor: pointer;
 }
+
+
 
 @media only screen and (min-width: 1023px) {
   .services-container {
