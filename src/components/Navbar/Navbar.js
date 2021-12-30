@@ -99,8 +99,7 @@ function Navbar() {
           <FiX size={30} />
         </div>
       )}
-
-      <MobileMenu menuOpen={menuOpen} />
+      {menuOpen ? <MobileMenu /> : ""}
     </div>
   );
 }

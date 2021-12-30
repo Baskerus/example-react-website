@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=MobileMenu.css.map */
+.nav-menu {
+  -webkit-animation: slideIn 0.3s ease;
+          animation: slideIn 0.3s ease;
+}
+
+.nav-menu .nav-menu-link {
+  cursor: pointer;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=MobileMenu.css.map */

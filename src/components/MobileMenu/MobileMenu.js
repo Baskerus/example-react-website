@@ -1,14 +1,13 @@
 import React from "react";
 import "./MobileMenu.css";
-
-function MobileMenu({ menuOpen }) {
+function MobileMenu() {
   return (
-    <div className={`nav-menu ${menuOpen ? "" : "inactive"}`}>
-      <ul className="menu-nav-links">
-        <li className="menu-nav-link">Home</li>
-        <li className="menu-nav-link">Services</li>
-        <li className="menu-nav-link">Gallery</li>
-        <li className="menu-nav-link">Contact</li>
+    <div className="nav-menu">
+      <ul className="nav-menu-links">
+        <li className="nav-menu-link">Home</li>
+        <li className="nav-menu-link">Services</li>
+        <li className="nav-menu-link">Gallery</li>
+        <li className="nav-menu-link">Contact</li>
       </ul>
     </div>
   );
